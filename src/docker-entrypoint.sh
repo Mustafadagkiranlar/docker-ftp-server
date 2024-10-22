@@ -1,5 +1,4 @@
 #!/bin/sh
-
 addgroup \
 	-g $GID \
 	-S \
