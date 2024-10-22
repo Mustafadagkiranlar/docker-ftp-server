@@ -1,0 +1,12 @@
+services:
+  ftp-server:
+    container_name: ftp-server1
+    environment:
+      - FTP_PASS=
+      - FTP_USER=
+    image: vsftp-image
+    ports:
+      - '20-21:20-21/tcp'
+      - '40000-40025:40000-40025/tcp' # Only needed for passive mode
+    volumes:
+      - '/Users/mustafadagkiranlar/Desktop/docker/:/home/user/'
